@@ -27,12 +27,12 @@ const Grid = ({ users, setUsers, setOnEdit }) => {
   };
 
   return (
-    <C.Tabela>
+    <C.Table>
       <C.Thead>
         <C.Tr>
-          <C.Th>Nome</C.Th>
-          <C.Th>Email</C.Th>
-          <C.Th onlyWeb>Fone</C.Th>
+          <C.Th>Seu nome</C.Th>
+          <C.Th>Nome do pet</C.Th>
+          <C.Th onlyWeb>Brinquedo</C.Th>
           <C.Th></C.Th>
           <C.Th></C.Th>
         </C.Tr>
@@ -46,15 +46,15 @@ const Grid = ({ users, setUsers, setOnEdit }) => {
               {item.fone}
             </C.Td>
             <C.Td alignCenter width="5%">
-              <C.FaEdit onClick={() => handleEdit(item)} />
+              <FaEdit onClick={() => handleEdit(item)} />
             </C.Td>
             <C.Td alignCenter width="5%">
-              <C.FaTrash onClick={() => handleDelete(item.id)} />
+              <FaTrash onClick={() => handleDelete(item.id)} />
             </C.Td>
           </C.Tr>
         ))}
       </C.Tbody>
-    </C.Tabela>
+    </C.Table>
   );
 };
 

@@ -22,6 +22,7 @@ export const Input = styled.input`
   border: 1px solid #bbb;
   border-radius: 5px;
   height: 40px;
+  background-color: rgb(117, 116, 116);
 `;
 
 export const Label = styled.label``;

@@ -39,11 +39,11 @@ const Home = () => {
         {/* <Button Text="Sair" onClick={() => [signout(), navigate("/")]}>
           Sair
         </Button> */}
-        <C.h1>USUÁRIOS</C.h1>
+        <C.h2>Dados do Animal</C.h2>
         <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
         <Grid setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
       </C.Container>
-      <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} />
+      {/* <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} /> */}
 
     </div>
   );

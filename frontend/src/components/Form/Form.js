@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useRef } from "react";
-import styled from "styled-components";
 import * as C from "./styles";
 import { toast } from "react-toastify";
 import './styles.js'
@@ -67,19 +66,19 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
   return (
     <C.FormContainer ref={ref} onSubmit={handleSubmit}>
       <C.InputArea>
-        <C.Label>Nome</C.Label>
+        <C.Label>Seu nome</C.Label>
         <C.Input name="nome" />
       </C.InputArea>
       <C.InputArea>
-        <C.Label>E-mail</C.Label>
+        <C.Label>Nome do pet</C.Label>
         <C.Input name="email" type="email" />
       </C.InputArea>
       <C.InputArea>
-        <C.Label>Telefone</C.Label>
+        <C.Label>Brinquedo</C.Label>
         <C.Input name="fone" />
       </C.InputArea>
       <C.InputArea>
-        <C.Label>Data de Nascimento</C.Label>
+        <C.Label>Data da compra</C.Label>
         <C.Input name="data_nascimento" type="date" />
       </C.InputArea>
 

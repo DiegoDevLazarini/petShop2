@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Table = styled.table`
+export const Table = styled.table`
   width: 100%;
   background-color: #fff;
   padding: 20px;
